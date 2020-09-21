@@ -1,0 +1,64 @@
+<section>
+    <article>
+        <div class="container ">
+            <div class="card my-4">
+              <center><h1 class="card-title my-4">Invoice</h1></center>  
+                <div class="card-body">
+            <div class="companyName" style="display: flex;justify-content:space-between;">
+                <div>
+                    <h4>Aramex Automation Pvt.Limited</h4>
+                    <p>Banglore</p>
+                    <p>Ph:8884401000</p>
+                </div>
+                <div style="margin-right: 105px;">
+                    
+                    <p>Date:DD/MM/YYYY</p>
+                    <p>Invoice No.:XXXX</p>
+                </div>
+               
+            </div>
+            <div class="bill"  style="display: flex;justify-content:space-between;">
+                <div>
+                    <h4>Bill to</h4>
+                    <p>Company Name:Amazon</p>
+                    <p>Phone:8892114588</p>
+                    <address>Address:#501 5th cross Banglore-68</address>
+                </div>
+                <div>
+                    <h4>Ship to</h4>
+                    <p>Company Name:StarMart</p>
+                    <p>Phone:8892117548</p>
+                    <address>Address:#301 9th cross Tumkur-45</address>
+                </div>
+            </div>
+           
+            <table class="table table-bordered table-responsive my-4">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Specification</th>
+                         <th>QTY</th>
+                        <th>Unit Price</th>
+                         <th>Total</th>
+                    </tr>
+                </thead>
+                {{#each allproducts}}
+                <tbody>
+                    <tr>
+                     <td>{{name}}</td>
+                     <td>{{specification}}</td>
+                     <td>{{quantity}}</td>
+                     <td>{{price}}</td>
+                     <td>{{price}}</td>
+                    </tr>
+                </tbody>
+                 {{/each}}
+            </table>
+           
+             </div>
+              <center><h1>Thanks for shopping</h1></center>
+            </div>
+           
+        </div>
+    </article>
+</section>

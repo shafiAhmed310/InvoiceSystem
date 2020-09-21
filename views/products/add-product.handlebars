@@ -1,0 +1,38 @@
+<section id="add-product " class="my-4">
+    <article>
+        <div class="container">
+            <center>
+            <div class="card" style="max-width:500px">
+                <div class="card-body">
+                   <center><h4>Product Details</h4></center> 
+                 <form action="/product/add-product" method="POST">
+                <div class="form-group">
+                    <div>
+                        <label class="float-left" for="_name">Product Name</label>
+                        <input type="text" name="name"  class="form-control" placeholder="Enter the product name" required>
+                    </div>
+                    <div>
+                        <label  class="float-left" for="price">Product Price</label>
+                        <input type="text" name="price"   class="form-control" placeholder="Enter the product price" required>
+                    </div>
+                    <div>
+                        <label  class="float-left" for="quantity">Quantity</label>
+                        <input type="text" name="quantity"  class="form-control" placeholder="Enter the product quantity" required>
+                    </div>
+                    <div>
+                        <label  class="float-left" for="specification">Product Specification</label>
+                       <textarea name="specification"   class="form-control" cols="10" rows="5"></textarea>
+                    </div>
+                   <div>
+                       <button type="submit" class="btn btn-success my-2 float-right">Add Product</button>
+                   </div>
+                </div>
+
+                 </form>
+
+                </div>
+            </div>
+            </center>
+        </div>
+    </article>
+</section>

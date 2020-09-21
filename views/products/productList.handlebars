@@ -1,0 +1,37 @@
+<section id="product-list">
+    <article>
+        <div class="container my-4">
+           <center><h3 class=" my-4">List of products</h3></center> 
+         {{#each allproducts}}
+       <div class="card" >
+         
+           <div class="card-body">
+    
+           <p> <b>Name</b>:{{name}}</p>
+           <p><b>Price</b>:{{price}} </p>
+           <p><b>Specification</b>:{{specification}}</p>
+           <p><b>Quantity</b>:{{quantity}}</p>
+          
+             <a href="/product/edit-product/{{_id}}" class="btn btn-primary">Edit</a>
+            <a href="/product/invoice" class="btn btn-success">Generate Invoice</a>.
+
+            <div class="profile-more float-left mr-2">
+              
+                    <form action="/product/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE"> 
+                    <button class="btn btn-danger">Delete</button>
+                    </form>
+                  
+                </div>
+           
+          
+           
+
+           </div>
+          
+       </div>
+       <br>
+         {{/each}}
+         </div>
+    </article>
+</section>

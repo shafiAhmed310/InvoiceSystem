@@ -1,0 +1,40 @@
+<section id="add-product " class="my-4">
+    <article>
+        <div class="container">
+            <center>
+            <div class="card" style="max-width: 500px;">
+                <div class="card-body">
+                   <center><h4>Product Details</h4></center> 
+                 <form action="/product/update/{{editProduct._id}}?_method=PUT" method="POST" >
+                 <input type="hidden" name="method" value="PUT">
+               
+                <div class="form-group">
+                    <div>
+                        <label class="float-left" for="_name">Product Name</label>
+                        <input type="text" name="name" value="{{editProduct.name}}"  class="form-control" placeholder="Enter the product name" required>
+                    </div>
+                    <div>
+                        <label class="float-left" for="price">Product Price</label>
+                        <input type="text" name="price" value="{{editProduct.price}}"  class="form-control" placeholder="Enter the product price" required>
+                    </div>
+                    <div>
+                        <label class="float-left" for="quantity">Quantity</label>
+                        <input type="text" name="quantity" value="{{editProduct.quantity}}"  class="form-control" placeholder="Enter the product quantity" required>
+                    </div>
+                    <div>
+                        <label class="float-left" for="specification">Product Specification</label>
+                       <textarea name="specification" value="{{editProduct.specification}}"   class="form-control" cols="10" rows="5"></textarea>
+                    </div>
+                   <div>
+                       <button type="submit" class="btn btn-success my-2 float-right">Edit Product</button>
+                   </div>
+                </div>
+
+                 </form>
+
+                </div>
+            </div>
+            </center>
+        </div>
+    </article>
+</section>
